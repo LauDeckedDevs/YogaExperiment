@@ -13,9 +13,12 @@
 		5BD8C27C2810D666002F8858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD8C27A2810D666002F8858 /* Main.storyboard */; };
 		5BD8C27E2810D668002F8858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD8C27D2810D668002F8858 /* Assets.xcassets */; };
 		5BD8C2812810D668002F8858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD8C27F2810D668002F8858 /* LaunchScreen.storyboard */; };
+		DD7BEAA06334BDAA12414AFB /* Pods_YogaExperiment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D01A18389AE8D8B05E6C0D /* Pods_YogaExperiment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2664B9921B9EFAFC3D4783A0 /* Pods-YogaExperiment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaExperiment.debug.xcconfig"; path = "Target Support Files/Pods-YogaExperiment/Pods-YogaExperiment.debug.xcconfig"; sourceTree = "<group>"; };
+		54A196C65C14FC20D08BD491 /* Pods-YogaExperiment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YogaExperiment.release.xcconfig"; path = "Target Support Files/Pods-YogaExperiment/Pods-YogaExperiment.release.xcconfig"; sourceTree = "<group>"; };
 		5BD8C2712810D666002F8858 /* YogaExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD8C2742810D666002F8858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BD8C2762810D666002F8858 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		5BD8C27D2810D668002F8858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BD8C2802810D668002F8858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BD8C2822810D668002F8858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D01A18389AE8D8B05E6C0D /* Pods_YogaExperiment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YogaExperiment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7BEAA06334BDAA12414AFB /* Pods_YogaExperiment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				5BD8C2732810D666002F8858 /* YogaExperiment */,
 				5BD8C2722810D666002F8858 /* Products */,
+				DD5F5E603ACB97BF0BFB1E30 /* Pods */,
+				77AB6505141B78520966FE42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = YogaExperiment;
 			sourceTree = "<group>";
 		};
+		77AB6505141B78520966FE42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92D01A18389AE8D8B05E6C0D /* Pods_YogaExperiment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD5F5E603ACB97BF0BFB1E30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2664B9921B9EFAFC3D4783A0 /* Pods-YogaExperiment.debug.xcconfig */,
+				54A196C65C14FC20D08BD491 /* Pods-YogaExperiment.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BD8C2852810D668002F8858 /* Build configuration list for PBXNativeTarget "YogaExperiment" */;
 			buildPhases = (
+				3B0D692CE317528A766A035C /* [CP] Check Pods Manifest.lock */,
 				5BD8C26D2810D666002F8858 /* Sources */,
 				5BD8C26E2810D666002F8858 /* Frameworks */,
 				5BD8C26F2810D666002F8858 /* Resources */,
+				2E658A1D01B014CAE89C96F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E658A1D01B014CAE89C96F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YogaExperiment/Pods-YogaExperiment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YogaExperiment/Pods-YogaExperiment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YogaExperiment/Pods-YogaExperiment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B0D692CE317528A766A035C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YogaExperiment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BD8C26D2810D666002F8858 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		5BD8C2862810D668002F8858 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2664B9921B9EFAFC3D4783A0 /* Pods-YogaExperiment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		5BD8C2872810D668002F8858 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A196C65C14FC20D08BD491 /* Pods-YogaExperiment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
