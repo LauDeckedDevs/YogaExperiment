@@ -48,6 +48,13 @@ class ViewController: UIViewController {
         }
         rootView.addSubview(container)
         //Continue at 9:49
+        let redView = UIView()
+        
+        redView.backgroundColor = .systemRed
+        rootView.addSubview(redView)
+        redView.configureLayout { layout in
+            
+        }
         
         rootView.yoga.applyLayout(preservingOrigin: false)
     }
