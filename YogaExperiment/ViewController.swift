@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     //MARK: - Properties
     
+    let container = UIView()
     let redView = UIView()
     let redlabel = UILabel()
     let blueView = UIView()
@@ -34,7 +35,8 @@ class ViewController: UIViewController {
         rootView.configureLayout { layout in
             layout.isEnabled = true
             layout.flexDirection = .column
-            layout.paddingTop = 80
+            layout.paddingTop = 15
+            layout.justifyContent = .spaceAround
         }
         
         //MARK: - Title
@@ -52,7 +54,8 @@ class ViewController: UIViewController {
         }
         rootView.addSubview(title)
         
-        let container = UIView()
+        //MARK: - ContainerView
+        
         container.layer.borderWidth = 1
         container.layer.borderColor = UIColor.label.cgColor
         container.configureLayout { layout in
@@ -110,6 +113,27 @@ class ViewController: UIViewController {
         
         //MARK: - WIP- Button
         
+        button.setTitle("Show Blue view", for: .selected)
+        button.setTitle("Hide Blue View", for: .normal)
+        
+        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        button.configureLayout { layout in
+            layout.isEnabled = true
+            layout.width = 200
+            layout.height = 50
+            layout.alignSelf = .center
+        }
+        rootView.addSubview(button)
+        
         rootView.yoga.applyLayout(preservingOrigin: false)
+    }
+}
+
+extension ViewController {
+    @objc private func didTapButton() {
+        button.isSelected = !button.isSelected
+        blueView.isHidden = !blueView.isHidden
+        blueView.yoga.isIncludedInLayout = !blueView.yoga.isIncludedInLayout
+        view!.yoga.applyLayout(preservingOrigin: false)
     }
 }
