@@ -35,13 +35,13 @@ class ViewController: UIViewController {
         rootView.configureLayout { layout in
             layout.isEnabled = true
             layout.flexDirection = .column
-            layout.paddingTop = 15
+            layout.paddingTop = 100
             layout.justifyContent = .spaceAround
         }
         
         //MARK: - Title
         
-        let title = UILabel()
+        /*let title = UILabel()
         title.text = "YogaKit"
         title.textColor = .white
         title.backgroundColor = .black
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
             layout.height = 50
             layout.alignSelf = .center
         }
-        rootView.addSubview(title)
+        rootView.addSubview(title)*/
         
         //MARK: - ContainerView
         
